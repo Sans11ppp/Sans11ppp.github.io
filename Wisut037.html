@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การใช้ตารางจัดการฟอร์ม</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            margin: 0 auto;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            opacity: 0.8;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>การใช้ตารางจัดการฟอร์มรับส่งข้อมูล</h1>
+
+    <form action="check.php" method="post">
+        <table border="0" cellspacing="0" cellpadding="3">
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" name="firstname" required></td>
+            </tr>
+            <tr>
+                <td>สกุล</td>
+                <td><input type="text" name="lastname" required></td>
+            </tr>
+            <tr>
+                <td>ชื่อผู้ใช้งาน</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>รหัสผ่าน</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td>
+                    <input type="radio" name="gender" value="male" required> ชาย
+                    <input type="radio" name="gender" value="female" required> หญิง
+                </td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td>
+                    <select name="age" required>
+                        <option value="1">1-10 ปี</option>
+                        <option value="2">11-20 ปี</option>
+                        <option value="3">21-30 ปี</option>
+                        <option value="4">31-40 ปี</option>
+                        <option value="5">41-50 ปี</option>
+                        <option value="6">51-60 ปี</option>
+                        <option value="7">61 ปีขึ้นไป</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>เงื่อนไข</td>
+                <td><input type="checkbox" name="conditions" value="yes" required> ข้าพเจ้ายอมรับและยินดีทำตามข้อตกลง</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="ตกลง">
+                    <input type="reset" value="ยกเลิก">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="About.html">ประวัติความเป็นมา</a>
+        <a href="identity.html">อัตลักษณ์</a>
+        <a href="Philosophy, Vision, Mission.html">ปรัชญา</a>
+        <a href="policy.html">นโยบาย</a>
+        <a href="tradition.html">ทำเนียม</a>
+        <a href="lasume_037.html">ผู้จัดทำ</a>
+        <a href="Wisut037.html">ฟอร์ม</a>
+        <a href="knowledge sheet.html">ใบความรู้</a>
+    </nav>
+
+</body>
+</html>

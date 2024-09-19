@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            margin: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .grid-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ใบความรู้</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก</a>
+        <a href="About.html">ประวัติความเป็นมา</a>
+        <a href="identity.html">อัตลักษณ์</a>
+        <a href="Philosophy, Vision, Mission.html">ปรัชญา</a>
+        <a href="policy.html">นโยบาย</a>
+        <a href="tradition.html">ทำเนียม</a>
+        <a href="lasume_037.html">ผู้จัดทำ</a>
+        <a href="Wisut037.html">ฟอร์ม</a>
+        <a href="knowledge sheet.html">ใบความรู้</a>
+    </nav>
+
+    <div class="container">
+        <h1>แสดงภาพประกอบ</h1>
+        <div class="grid-container">
+           <div class="grid-item">
+              <!-- แสดงไฟล์ PDF แทนที่ไฟล์รูปภาพ -->
+              <p><embed src="2.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="4.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="1.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="6.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="8.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="9.pdf" type="application/pdf" width="600" height="400"></embed></p>
+              <p><embed src="10.pdf" type="application/pdf" width="600" height="400"></embed></p>
+        </div>
+        
+           <!-- เพิ่มรูปได้ตามต้องการ -->
+       </div>
+    </div>
+</body>
+</html>
+
